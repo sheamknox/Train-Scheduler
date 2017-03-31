@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>Train Schedule</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+	    <div class="col-md-4"></div>
+
+	    <div id="main-content" class="col-md-6">
+	    	<div class="row schedule rounded">
+		      <table class="table table-hover">
+				<thead class="thead-inverse">
+				  <tr>
+				    <th>Train</th>
+				    <th>Destination</th>
+				    <th>Frequency (min)</th>
+				    <th>Next Arrival</th>
+				    <th>Minutes Away</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+				    <td>Austin Express</td>
+				    <td>Houston</td>
+				    <td>30</td>
+				  </tr>
+				  <tr>
+				    <td>Pflugerville Pflyer</td>
+				    <td>NYC</td>
+				    <td>600</td>
+				  </tr>
+				  <tr>
+				    <td>Kyle Karavan</td>
+				    <td>San Antonio</td>
+				    <td>20</td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+			<div class="row form">
+				<form>
+				  <div class="form-group">
+				    <label>Train Name</label>
+				    <input id="trainName" type="text" class="form-control" placeholder="Train Name">
+				  </div>
+				  <div class="form-group">
+				    <label>Destination</label>
+				    <input id="destination" type="text" class="form-control" placeholder="Destination">
+				  </div>
+				  <div class="form-group">
+				    <label>First Train Time (HH:mm - military time)</label>
+				    <input id="firstTrain" type="text" class="form-control" placeholder="15:30">
+				  </div>
+				  <div class="form-group">
+				    <label>Frequency (min)</label>
+				    <input id="frequency" type="text" class="form-control" placeholder="Frequency">
+				  </div>		  
+				  <button id="submit" type="submit" class="btn btn-success">Submit</button>
+				</form>
+			</div>
+
+	    </div>
+
+	    <div class="col-md-4"></div>
+  </div>
+  <div class="row footer"></div>
+ </div>
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
+
+

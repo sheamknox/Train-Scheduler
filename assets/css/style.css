@@ -1,0 +1,30 @@
+.container {
+	position: relative;
+	left: -5%;
+}
+
+.jumbotron {
+	background-color: purple;
+	color: white;
+}
+
+.schedule, .form {
+	border: 1px solid black;
+}
+
+.schedule {
+	margin-bottom: 10px;
+}
+
+.form {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.footer {
+	height: 100px;
+	background-color: purple;
+	width: 1349px;
+	position: relative;
+	left: -37px;
+}
